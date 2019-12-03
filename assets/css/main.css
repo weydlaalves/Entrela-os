@@ -1,0 +1,678 @@
+/* 
+ * 1. Google Font
+ */
+@font-face{
+  font-family: Derick;
+  src: url(../images/DerickChetty.ttf);
+}
+@font-face{
+  font-family: Swiss;
+  src: url(../images/Swiss-721-Light-BT_43251.ttf);
+}
+/* 
+ * 2.0 Global Style
+ */
+/* 
+ * menu navegação bolinhas
+ */
+ .inicio img{
+   width: 35%;
+ }
+
+ .nomes{
+  margin-top: -24px;
+  margin-left: 20px;
+}
+
+ ul {
+  counter-reset: item;
+  margin-left: -100px;
+  list-style: none;
+  margin-top: 250px;
+}
+li { 
+ 
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  color:white;
+  text-align: center;
+  
+}
+li::before {
+
+  position: absolute;
+  
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  color:white;
+  text-align: center;
+}
+
+
+html {
+  font-family: 'Swiss';
+  font-size: 16px;
+}
+
+body {
+  color: #BF8578;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+ 
+}
+.hide-bullets {
+  list-style:none;
+  margin-left: -40px;
+  margin-top:20px;
+  }
+a {
+  color: white;
+  text-decoration: none;
+  
+}
+a:focus {
+  outline: none;
+}
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.col-sm-12 p {
+  font-size: 18px;
+  color: white;
+  font-family: 'Swiss';
+  margin-top: 3%;
+  text-align: center;
+  
+}
+
+ul li {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+ h1{
+  font-family: 'Derick';
+  font-size: 55px;
+  color: white;
+  
+}
+
+.custom-list-icon, .list-arrow-right {
+  list-style-type: none;
+  padding: 0;
+}
+.custom-list-icon li, .list-arrow-right li {
+  position: relative;
+  padding-left: 20px;
+}
+.custom-list-icon li::before, .list-arrow-right li::before {
+  position: absolute;
+  left: 0;
+  
+  font-family: "Ionicons";
+}
+
+.social-block {
+  list-style-type: none;
+  padding: 0;
+}
+.social-block li {
+  display: inline-block;
+}
+.social-block li a {
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  
+}
+.social-block li a i {
+  font-size: 1.5em;
+}
+.social-block li a:hover, .social-block li a:focus {
+  color: #000;
+}
+
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn {
+  border: 0;
+  border-radius: 0;
+  padding: 6px 28px;
+  text-transform: uppercase;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+          transition-property: transform;
+}
+.btn:hover {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.form-control {
+  border-radius: 0;
+  box-shadow: none;
+  height: 48px;
+  padding: 10px 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ccc;
+  background-color: #BF8578;
+}
+
+.valign-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section {
+  padding: 70px 0;
+}
+
+.section-title {
+  color:#BF8578;
+  letter-spacing: 1px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* 
+ * 3.0 Helper Class
+ */
+/* 
+ * 3.1 Helper Class: font-weight
+ */
+.font-300 {
+  font-weight: 300;
+}
+
+.font-400 {
+  font-weight: 400;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+/* 
+ * 3.2 Helper Class: margin
+ */
+.mt0 {
+  margin-top: 0;
+}
+
+.mb0 {
+  margin-bottom: 0;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+/* 
+ * 3.3 Helper Class: list
+ */
+.list-arrow-right li::before {
+  content: "\f3d3";
+}
+
+/* 
+ * 3.4 Helper Class: button
+ */
+.btn-white {
+  color: #000;
+  background-color:#BF8578;
+}
+.btn-white:hover, .btn-white:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+.btn-black {
+  color: #fff;
+  background-color: #000;
+}
+.btn-black:hover, .btn-black:focus {
+  color: #fff;
+  background-color: #000;
+}
+
+/* 
+ * 3.5 Helper Class: background
+ */
+.bg-image, .bg-image-1, .bg-image-2 {
+  position: relative;
+}
+.bg-image::before, .bg-image-1::before, .bg-image-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.bg-image-1::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.bg-image-2::before {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 90px 0;
+  
+  }
+
+  .section-title {
+    
+    letter-spacing: 1px;
+    margin: 0 0 60px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+}
+/* 
+ * 4.0 Navigation
+ */
+.navbar-custom {
+  border: 0;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #000;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+}
+.navbar-custom .navbar-nav li {
+  margin: 0;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid transparent;
+}
+.navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
+  background-color: transparent;
+  border-color: #BF8578;
+}
+.navbar-custom .navbar-nav > .active > a {
+  border-color: #BF8578;
+}
+
+.navbar-toggle {
+  border: 0;
+  border-radius: 0;
+  margin-top: 2px;
+}
+.navbar-toggle .icon-bar {
+  background-color:#BF8578;
+}
+#fact{
+  background-color: #BF8578;
+}
+
+.navbar-solid {
+  
+  padding: 0 !important;
+  -webkit-transition: all 0.2s linear 0s;
+          transition: all 0.2s linear 0s;
+}
+
+
+
+a{
+  color: white;
+  text-decoration:none;
+
+}
+.site-branding {
+  float: left;
+  margin-top: 0;
+  margin-left: 10px;
+}
+.site-branding .logo {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  margin-right: 5px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.site-branding .logo:focus, .site-branding .logo:hover {
+  text-decoration: none;
+}
+
+/* 
+ * 5.0 inicio
+ */
+.inicio {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  background: url(../images/backgrounds/header.jpg) no-repeat center center/cover;
+  display: table;
+}
+.inicio::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.inicio .intro {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+  z-index: 1;
+  padding: 0 15px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100vh;
+}
+.inicio .intro h2 {
+  margin-top: 0px;
+  font-size: 25px;
+  font-weight: 300;
+}
+.inicio .intro h1 {
+  margin-top: 0px;
+  font-size: 30px;
+}
+.inicio .intro p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.inicio img{
+  width: 50%;
+  height: 45% ;
+}
+
+@media (min-width: 768px) {
+  .navbar-custom {
+    background-color: transparent;
+    padding-top: 30px;
+  }
+
+  .site-branding {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+}
+/* 
+ * 6.0 Section
+ */
+/* 
+ * 6.1 Section: sobre 
+ */
+ #sobre{
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: table;
+ }
+.sobre .section-title {
+  margin: 0 0 25px;
+}
+.sobre figure {
+  margin-bottom: 25px;
+}
+.col-sm-6 a{
+  text-decoration: none;
+  
+}
+
+/* 
+ * 6.2 Section: galeria
+ */
+ #galeria{
+  background-color:black;
+  color:white;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: table;
+ }
+ 
+.galeria i {
+  color: #fff;
+  font-size: 3em;
+}
+.galeria h3 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+.galeria a{
+  text-decoration: none;
+  position: absolute;
+  top: 80%;
+  left: 5%;
+}
+.galeria img{
+  width: 50%;
+  height: 50%;
+}
+
+
+/* 
+ * 6.6 Section: agenda
+ */
+ #agenda{
+  background-color: #BF8578;
+  color:white;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: table;
+ }
+ 
+.agenda-box {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin: 25px 0 0;
+}
+.agenda-box::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  border: 1px solid #fff;
+}
+.agenda h1{
+  margin-top: 5%;
+}
+    
+
+
+.row form{
+  color:black;
+  margin-top: 20%;
+}
+
+/* 
+ * 6.9 Section: photos
+ */
+.grid {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.grid::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  float: left;
+  overflow: hidden;
+  padding: 3px;
+  margin: 0;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .grid-item-sm-6 {
+    width: 50%;
+  }
+
+  .grid-item-sm-3 {
+    width: 25%;
+  }
+
+  .section-title {
+    margin: 0 0 30px;
+  }
+
+  figure {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 992px) {
+  .agenda-box {
+    margin: 0;
+  }
+
+  .grid-item-md-6 {
+    width: 50%;
+  }
+
+  .grid-item-md-3 {
+    width: 25%;
+  }
+}
+/* 
+ * 7.0 contato
+ */
+.contato {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+.contato .site-info {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contato .site-info a {
+  color: #fff;
+}
+.contato .social-block li a {
+  color: #fff;
+}
+.contato .social-block li a:hover, .contato .social-block li a:focus {
+  opacity: 0.8;
+}
+#contato{
+  background-color: #BF8578;
+  color:white;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  display: table;
+}
+.contato h2{
+  margin-top: 20%;
+  color: white;
+
+}
+.contato h1{
+  margin-top: 30px;
+}
+.contato h3{
+  font-family: 'Swiss';
+  font-size: 18px;
+  color:black;
+  margin-bottom: 20px;
+  
+  
+}
+.contato h2{
+  margin-left: -50%;
+  margin-top: 15px;
+  font-family: 'Swiss';
+  font-size: 30px;
+}
+.contato p{
+  margin-left: -50%;
+  margin-top: 5px;
+}
+.contato #form{
+  margin-top: -18px;
+  
+}
+.footer{
+  background-color: black;
+  
+}
+.footer a{
+  font-family: 'Swiss';
+  color: white;
+  font-size: 14px;
+  margin-top: 10%;
+  text-decoration: none;
+  margin-bottom: 20px;
+  
+}

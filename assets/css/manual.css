@@ -1,0 +1,166 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{ 
+    display: flex;
+    flex-direction: row;
+    background-color: #034969;
+}
+
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.marca{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.zonadE{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.coreslogo{
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+.paleta{
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+
+
+.left-container{
+    width: 45vw;
+    height: 100%;
+}
+
+.right-container{
+    width: 55vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.center-container{
+    width: 45vw;
+    height: 100%;
+    background-image: url("../images/manual/fundo.webp");
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    background-position: center;
+}
+
+.fullpage-container{
+    width: 100vw;
+    height: 100vh;
+}
+
+#logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img{
+    width: 330px;
+    height: 140px;
+    /* 130 */
+}
+
+.titulo-page{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-page h1{
+    margin: 0px;
+    padding: 0px;
+}
+
+.description-page-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.description-page-content{
+    width: 50%;
+    padding: 0px 20px 20px 20px;
+}
+
+.image-container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-container1{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.image-content{
+    width: 30%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.image-content img{
+    margin-top: 40px;   
+}
+
+.image-column-content{
+    width: 50%;
+    height: 100%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-column-content img{
+    width: 170px;
+    height: 80px;
+    margin: 20px;
+}
+
+.image-column-content1{
+    width: 170px;
+    height: 80px;
+    margin: 20px;
+    background-color: lightpink;
+}
+
