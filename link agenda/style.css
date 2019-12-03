@@ -1,0 +1,61 @@
+body{
+    background-color: whitesmoke;
+}
+
+#class1 p{
+    width: 220px;
+    margin-left: 1px;
+    margin-top: -340px;
+    font-size: 13pt;
+    color: seagreen;
+
+}
+
+.geral{
+    background-color: tomato;
+    width: 1000px;
+    height: 310px;
+}
+
+.text1{
+    width: 210px;
+    height: 60px;
+    margin: 180px 0px 0px 320px;
+}
+.text1 p{
+    font-size: 20pt;
+    color: salmon;;
+}
+
+.text2{
+    width: 210px;
+    height: 40px;
+    margin: -40px 0px 0px 0px;
+}
+.text2 p{
+    font-size: 11pt;
+    color: salmon;
+}
+
+.titulo{
+    width: 360px;
+    height: 210px;
+    margin-left: 380px;
+    margin-top: -160px;
+}
+
+.titulo h1{
+    font-size: 19pt;
+    color:salmon;;
+    margin-bottom: 15px;
+}
+.titulo p{
+    font-size: 11pt;
+    margin-bottom: 5px;
+}
+.titulo h2{
+    font-size: 19pt;
+    color: salmon;;
+    margin-top: 2px;
+}
+
