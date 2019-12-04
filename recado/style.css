@@ -1,0 +1,40 @@
+body{
+    background-color: whitesmoke;
+}
+
+
+#class1 p{
+    width: 220px;
+    margin-left: -350px;
+    margin-top: -300px;
+    font-size: 13pt;
+    color: seagreen;
+
+}
+
+.text1{
+    width: 520px;
+    height: 60px;
+    margin: 230px 0px 0px 400px;
+    background-color: rgb(245, 228, 196);
+}
+.text1 p{
+    font-size: 30pt;
+    color: salmon;
+}
+
+.text2{
+    width: 520px;
+    height: 40px;
+    margin: -27px 0px 0px 0px;
+    background-color: rgb(245, 228, 196);
+}
+.text2 p{
+    font-size: 15pt;
+    color: salmon;
+}
+
+
+
+
+
